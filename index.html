@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wisu</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Segoe UI', sans-serif;
+            overflow: hidden;
+            background: #000;
+        }
+
+        video.bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: white;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 2em;
+        }
+
+        .links a {
+            display: block;
+            margin: 8px 0;
+            padding: 12px 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            transition: background 0.3s;
+        }
+
+        .links a:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Replace 'bg-video.mp4' with your video file -->
+    <video class="bg" autoplay muted loop>
+        <source src="image/snaptik_7528286215385206024.mp4" type="video/mp4" />
+    </video>
+
+    <div class="content">
+        <img class="avatar" src="image/Wislogs.jpg" alt="Profile Picture" />
+        <h1>@wisu</h1>
+        <div class="links">
+            <a href="https://instagram.com/wihseuli_m" target="_blank">Instagram</a>
+            <a href="https://tiktok.com/@wihseuli" target="_blank">TikTok</a>
+            <a href="https://discord.com/wai-jeulli" target="_blank">Discord</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
